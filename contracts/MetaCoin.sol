@@ -15,6 +15,10 @@ contract MetaCoin is ERC20, ERC20Detailed {
 	mapping (address => uint) balances;
 
 
+// Metacoin Create Tokens and ERC20 qulalities that those tokens most have to
+// be usedable. Now we can code it out mannually , or we insert a methods
+//  ERC20
+
 	constructor() ERC20Detailed("MetaCooin", "MC", 18) public {
            _mint(msg.sender, 10000);
 	}
