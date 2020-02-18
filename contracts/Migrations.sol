@@ -1,4 +1,5 @@
 pragma solidity >=0.4.25 <0.7.0;
+// Most cases, we dont touch this. 
 
 contract Migrations {
   address public owner;
