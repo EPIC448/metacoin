@@ -19,13 +19,13 @@ contract MetaCoin is ERC20, ERC20Detailed {
 // be usedable. Now we can code it out mannually , or we insert a methods
 //  ERC20
 
-	constructor() ERC20Detailed("MetaCooin", "MC", 18) public {
-           _mint(msg.sender, 10000);
+	constructor() ERC20Detailed("MetaCoin", "MC", 18) public {
+           _mint(msg.sender, 10000 * (10** uint256(decimals())));
 	}
+        //    _mint(msg.sender, 10000 * (10** uint256(decimals())));
 
+// balances[msg.sender] = totalSupply
 	
-
-
 
 
 }

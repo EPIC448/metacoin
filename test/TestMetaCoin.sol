@@ -9,17 +9,17 @@ contract TestMetaCoin {
   function testInitialBalanceUsingDeployedContract() public {
     MetaCoin meta = MetaCoin(DeployedAddresses.MetaCoin());
 
-    uint expected = 10000;
+    uint expected = 10000000000000000000000;
 
-    Assert.equal(meta.balanceOf(tx.origin), expected, "Owner should have 10000 MetaCoin initially");
+    Assert.equal(meta.balanceOf(tx.origin), expected, "Owner should have 10000000000000000000000 MetaCoin initially");
   }
 
   function testInitialBalanceWithNewMetaCoin() public {
     MetaCoin meta = new MetaCoin();
 
-    uint expected = 10000;
+    uint expected = 10000000000000000000000;
 
-    Assert.equal(meta.balanceOf(tx.origin), expected, "Owner should have 10000 MetaCoin initially");
+    Assert.equal(meta.balanceOf(tx.origin), expected, "Owner should have 10000000000000000000000 MetaCoin initially");
   }
 
 }
